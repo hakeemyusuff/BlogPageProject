@@ -1,0 +1,138 @@
+[debug] [2023-05-07T05:56:32.773Z] ----------------------------------------------------------------------
+[debug] [2023-05-07T05:56:32.778Z] Command:       /home/yusuff/.nvm/versions/node/v20.1.0/bin/node /home/yusuff/.nvm/versions/node/v20.1.0/bin/firebase init
+[debug] [2023-05-07T05:56:32.779Z] CLI Version:   11.30.0
+[debug] [2023-05-07T05:56:32.779Z] Platform:      linux
+[debug] [2023-05-07T05:56:32.780Z] Node Version:  v20.1.0
+[debug] [2023-05-07T05:56:32.780Z] Time:          Sun May 07 2023 06:56:32 GMT+0100 (West Africa Standard Time)
+[debug] [2023-05-07T05:56:32.781Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-07T05:56:32.792Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-07T05:56:32.793Z] > authorizing via signed-in user (hakeemyusuff19@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/yusuff/Desktop/BlogPageProject
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2023-05-07T06:00:12.440Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2023-05-07T06:00:12.441Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"hakeemyusuff-blogtailwind","name":"hakeemyusuff-blogtailwind"}
+[debug] [2023-05-07T06:00:14.148Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2023-05-07T06:00:14.149Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.5370876599372358750"}
+[debug] [2023-05-07T06:00:14.157Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5370876599372358750 [none]
+[debug] [2023-05-07T06:00:15.476Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5370876599372358750 200
+[debug] [2023-05-07T06:00:15.478Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5370876599372358750 {"name":"operations/cp.5370876599372358750","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","ready":true},"done":true,"error":{"code":9,"message":"Callers must accept Terms of Service","details":[{"@type":"type.googleapis.com/google.rpc.PreconditionFailure","violations":[{"type":"TOS","subject":"cloud","description":"Callers must accept Terms of Service"}]}]}}
+[debug] [2023-05-07T06:00:15.850Z] FirebaseError: Callers must accept Terms of Service
+    at OperationPoller.poll (/home/yusuff/.nvm/versions/node/v20.1.0/lib/node_modules/firebase-tools/lib/operation-poller.js:24:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createCloudProject (/home/yusuff/.nvm/versions/node/v20.1.0/lib/node_modules/firebase-tools/lib/management/projects.js:186:29)
+    at async createFirebaseProjectAndLog (/home/yusuff/.nvm/versions/node/v20.1.0/lib/node_modules/firebase-tools/lib/management/projects.js:45:9)
+    at async promptAndCreateNewProject (/home/yusuff/.nvm/versions/node/v20.1.0/lib/node_modules/firebase-tools/lib/init/features/project.js:32:12)
+    at async doSetup (/home/yusuff/.nvm/versions/node/v20.1.0/lib/node_modules/firebase-tools/lib/init/features/project.js:88:27)
+    at async init (/home/yusuff/.nvm/versions/node/v20.1.0/lib/node_modules/firebase-tools/lib/init/index.js:37:9)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
+[debug] [2023-05-07T06:00:24.895Z] ----------------------------------------------------------------------
+[debug] [2023-05-07T06:00:24.901Z] Command:       /home/yusuff/.nvm/versions/node/v20.1.0/bin/node /home/yusuff/.nvm/versions/node/v20.1.0/bin/firebase init
+[debug] [2023-05-07T06:00:24.902Z] CLI Version:   11.30.0
+[debug] [2023-05-07T06:00:24.902Z] Platform:      linux
+[debug] [2023-05-07T06:00:24.902Z] Node Version:  v20.1.0
+[debug] [2023-05-07T06:00:24.903Z] Time:          Sun May 07 2023 07:00:24 GMT+0100 (West Africa Standard Time)
+[debug] [2023-05-07T06:00:24.903Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-07T06:00:24.914Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-07T06:00:24.915Z] > authorizing via signed-in user (hakeemyusuff19@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/yusuff/Desktop/BlogPageProject
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2023-05-07T06:01:06.439Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2023-05-07T06:01:06.441Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"hakeemyusuff-blogtailwind","name":"hakeemyusuff-blogtailwind"}
+[debug] [2023-05-07T06:01:08.060Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2023-05-07T06:01:08.061Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.5424023973202430778"}
+[debug] [2023-05-07T06:01:08.069Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5424023973202430778 [none]
+[debug] [2023-05-07T06:01:09.312Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5424023973202430778 200
+[debug] [2023-05-07T06:01:09.313Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5424023973202430778 {"name":"operations/cp.5424023973202430778","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","ready":true},"done":true,"error":{"code":9,"message":"Callers must accept Terms of Service","details":[{"@type":"type.googleapis.com/google.rpc.PreconditionFailure","violations":[{"type":"TOS","subject":"cloud","description":"Callers must accept Terms of Service"}]}]}}
+[debug] [2023-05-07T06:01:09.671Z] FirebaseError: Callers must accept Terms of Service
+    at OperationPoller.poll (/home/yusuff/.nvm/versions/node/v20.1.0/lib/node_modules/firebase-tools/lib/operation-poller.js:24:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createCloudProject (/home/yusuff/.nvm/versions/node/v20.1.0/lib/node_modules/firebase-tools/lib/management/projects.js:186:29)
+    at async createFirebaseProjectAndLog (/home/yusuff/.nvm/versions/node/v20.1.0/lib/node_modules/firebase-tools/lib/management/projects.js:45:9)
+    at async promptAndCreateNewProject (/home/yusuff/.nvm/versions/node/v20.1.0/lib/node_modules/firebase-tools/lib/init/features/project.js:32:12)
+    at async doSetup (/home/yusuff/.nvm/versions/node/v20.1.0/lib/node_modules/firebase-tools/lib/init/features/project.js:88:27)
+    at async init (/home/yusuff/.nvm/versions/node/v20.1.0/lib/node_modules/firebase-tools/lib/init/index.js:37:9)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
+[debug] [2023-05-07T06:04:35.859Z] ----------------------------------------------------------------------
+[debug] [2023-05-07T06:04:35.863Z] Command:       /home/yusuff/.nvm/versions/node/v20.1.0/bin/node /home/yusuff/.nvm/versions/node/v20.1.0/bin/firebase init
+[debug] [2023-05-07T06:04:35.865Z] CLI Version:   11.30.0
+[debug] [2023-05-07T06:04:35.865Z] Platform:      linux
+[debug] [2023-05-07T06:04:35.865Z] Node Version:  v20.1.0
+[debug] [2023-05-07T06:04:35.865Z] Time:          Sun May 07 2023 07:04:35 GMT+0100 (West Africa Standard Time)
+[debug] [2023-05-07T06:04:35.866Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-07T06:04:35.878Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-07T06:04:35.880Z] > authorizing via signed-in user (hakeemyusuff19@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/yusuff/Desktop/BlogPageProject
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2023-05-07T06:05:03.706Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2023-05-07T06:05:03.708Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"hakeemyusuff19-blogtailwind","name":"hakeemyusuff19-blogtailwind"}
+[debug] [2023-05-07T06:05:05.349Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2023-05-07T06:05:05.350Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.7580217042686377959"}
+[debug] [2023-05-07T06:05:05.356Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7580217042686377959 [none]
+[debug] [2023-05-07T06:05:06.647Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7580217042686377959 200
+[debug] [2023-05-07T06:05:06.648Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7580217042686377959 {"name":"operations/cp.7580217042686377959","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","ready":true},"done":true,"error":{"code":9,"message":"Callers must accept Terms of Service","details":[{"@type":"type.googleapis.com/google.rpc.PreconditionFailure","violations":[{"type":"TOS","subject":"cloud","description":"Callers must accept Terms of Service"}]}]}}
+[debug] [2023-05-07T06:05:07.109Z] FirebaseError: Callers must accept Terms of Service
+    at OperationPoller.poll (/home/yusuff/.nvm/versions/node/v20.1.0/lib/node_modules/firebase-tools/lib/operation-poller.js:24:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createCloudProject (/home/yusuff/.nvm/versions/node/v20.1.0/lib/node_modules/firebase-tools/lib/management/projects.js:186:29)
+    at async createFirebaseProjectAndLog (/home/yusuff/.nvm/versions/node/v20.1.0/lib/node_modules/firebase-tools/lib/management/projects.js:45:9)
+    at async promptAndCreateNewProject (/home/yusuff/.nvm/versions/node/v20.1.0/lib/node_modules/firebase-tools/lib/init/features/project.js:32:12)
+    at async doSetup (/home/yusuff/.nvm/versions/node/v20.1.0/lib/node_modules/firebase-tools/lib/init/features/project.js:88:27)
+    at async init (/home/yusuff/.nvm/versions/node/v20.1.0/lib/node_modules/firebase-tools/lib/init/index.js:37:9)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
